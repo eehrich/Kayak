@@ -215,8 +215,8 @@ public class BusURL implements Transferable {
         InputStreamReader input = null;
         OutputStreamWriter output = null;
         try {
-            socket.setSoTimeout(100);
-            socket.connect(address, 100);
+            socket.setSoTimeout(7000);
+            socket.connect(address, 7000);
 
             input = new InputStreamReader(
                     socket.getInputStream());
